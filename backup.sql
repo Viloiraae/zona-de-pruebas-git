@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict oToDrOeqWJNDZA6pleiF36HpiRlmBywDsBJnUdKHCGfb25CoXGl3HbYUtq6VaIt
+\restrict jrpcyzQI5b5h6cuysmh5mokXM0TnHQCnNIpymJ6XP5IxmMr6o3lmwk9pxIR2WYZ
 
 -- Dumped from database version 16.15
 -- Dumped by pg_dump version 16.15
@@ -28,9 +28,9 @@ CREATE DATABASE my_database WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_P
 
 ALTER DATABASE my_database OWNER TO postgres;
 
-\unrestrict oToDrOeqWJNDZA6pleiF36HpiRlmBywDsBJnUdKHCGfb25CoXGl3HbYUtq6VaIt
+\unrestrict jrpcyzQI5b5h6cuysmh5mokXM0TnHQCnNIpymJ6XP5IxmMr6o3lmwk9pxIR2WYZ
 \connect my_database
-\restrict oToDrOeqWJNDZA6pleiF36HpiRlmBywDsBJnUdKHCGfb25CoXGl3HbYUtq6VaIt
+\restrict jrpcyzQI5b5h6cuysmh5mokXM0TnHQCnNIpymJ6XP5IxmMr6o3lmwk9pxIR2WYZ
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -223,5 +223,5 @@ ALTER TABLE ONLY public.products
 -- PostgreSQL database dump complete
 --
 
-\unrestrict oToDrOeqWJNDZA6pleiF36HpiRlmBywDsBJnUdKHCGfb25CoXGl3HbYUtq6VaIt
+\unrestrict jrpcyzQI5b5h6cuysmh5mokXM0TnHQCnNIpymJ6XP5IxmMr6o3lmwk9pxIR2WYZ
 
