@@ -13,7 +13,7 @@ echo -e "\n1. Total de productos en catálogo:"
 echo "$($PSQL "SELECT COUNT(*) FROM products;")"
 # 2. Valoración financiera total (precio unitario * unidades físicas disponibles)
 echo -e "\n2. Valor total del inventario: ($)"
-echo "$($PSQL "SELECT SUM(price * stock) FROM products;")"
+echo "$($PSQL "SELECT TO_CHAR(SUM(price * stock), 'FM999,999,999.99') FROM products;")"
 # 3. Distribución de stock por categoría (ordenada de mayor a menor volumen)
 echo -e "\n3. Unidades totales en stock por categoría:"
 echo "$($PSQL "SELECT c.name, SUM(p.stock) FROM products p INNER JOIN categories c ON p.category_id = c.category_id GROUP BY c.name ORDER BY SUM(p.stock) DESC;")"
