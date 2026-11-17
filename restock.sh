@@ -16,10 +16,10 @@ read -p "Nombre del producto: " PRODUCT_NAME
 EXISTING_PRODUCT=$($PSQL "SELECT name FROM products where name = '$PRODUCT_NAME';")
 done
 #comprobamos si se ha introducido una cantidad válida (mayor que 0)
-while [[ -z $RESTOCK_AMOUNT ]]
+while [[ ! "$RESTOCK_AMOUNT" =~ ^[1-9][0-9]*$ ]]
 do
-#mensaje de error si el campo esta vacio
-echo -e "\nIntroduzca una cantidad válida"
+#mensaje de error si el campo no es un número entero mayor que 0
+echo -e "\nIntroduzca una cantidad válida (número entero mayor que 0)"
 read -p "Cantidad a reponer: " RESTOCK_AMOUNT
 done
 $PSQL "UPDATE products SET stock = stock + $RESTOCK_AMOUNT WHERE name = '$PRODUCT_NAME';" > /dev/null
