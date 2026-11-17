@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict 0SgqGW1uOW9ibpHxLI0LV7geX5eHWvfSHlgHlYrFlomGpFRVEZmkIM4feh8fwqQ
+\restrict iHMMg5n1us2sPgi7ALfsnum0ImxR4WWdnZ24ljxN78aBpCwmUtzmFgG38dGDobJ
 
 -- Dumped from database version 16.15
 -- Dumped by pg_dump version 16.15
@@ -28,9 +28,9 @@ CREATE DATABASE my_database WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_P
 
 ALTER DATABASE my_database OWNER TO postgres;
 
-\unrestrict 0SgqGW1uOW9ibpHxLI0LV7geX5eHWvfSHlgHlYrFlomGpFRVEZmkIM4feh8fwqQ
+\unrestrict iHMMg5n1us2sPgi7ALfsnum0ImxR4WWdnZ24ljxN78aBpCwmUtzmFgG38dGDobJ
 \connect my_database
-\restrict 0SgqGW1uOW9ibpHxLI0LV7geX5eHWvfSHlgHlYrFlomGpFRVEZmkIM4feh8fwqQ
+\restrict iHMMg5n1us2sPgi7ALfsnum0ImxR4WWdnZ24ljxN78aBpCwmUtzmFgG38dGDobJ
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -153,7 +153,6 @@ INSERT INTO public.categories VALUES (9, 'Iluminacion');
 
 INSERT INTO public.products VALUES (1, 'Teclado Mecanico RGB', 59.99, 15, 1);
 INSERT INTO public.products VALUES (2, 'Raton Gaming Optico', 34.50, 25, 1);
-INSERT INTO public.products VALUES (4, 'Auriculares Inalambricos', 75.00, 14, 3);
 INSERT INTO public.products VALUES (5, 'Alfombrilla XL', 14.95, 40, 4);
 INSERT INTO public.products VALUES (6, 'Webcam Full HD 1080p', 42.00, 18, 5);
 INSERT INTO public.products VALUES (7, 'Microfono Condensador USB', 65.50, 10, 3);
@@ -168,9 +167,10 @@ INSERT INTO public.products VALUES (15, 'Base Refrigeradora Portatil', 27.50, 14
 INSERT INTO public.products VALUES (17, 'Teclado Inalambrico Compacto', 38.00, 20, 1);
 INSERT INTO public.products VALUES (18, 'Raton Ergonomico Vertical', 29.50, 17, 1);
 INSERT INTO public.products VALUES (19, 'Tarjeta Memoria MicroSD 256GB', 24.00, 30, 7);
-INSERT INTO public.products VALUES (20, 'Lampara Barra LED Monitor', 31.99, 11, 9);
 INSERT INTO public.products VALUES (16, 'Monitor Curvo 32 pulgadas', 279.00, 15, 2);
 INSERT INTO public.products VALUES (3, 'Monitor 27 pulgadas IPS', 189.00, 20, 2);
+INSERT INTO public.products VALUES (20, 'Lampara Barra LED Monitor', 31.99, 16, 9);
+INSERT INTO public.products VALUES (4, 'Auriculares Inalambricos', 75.00, 30, 3);
 
 
 --
@@ -223,5 +223,5 @@ ALTER TABLE ONLY public.products
 -- PostgreSQL database dump complete
 --
 
-\unrestrict 0SgqGW1uOW9ibpHxLI0LV7geX5eHWvfSHlgHlYrFlomGpFRVEZmkIM4feh8fwqQ
+\unrestrict iHMMg5n1us2sPgi7ALfsnum0ImxR4WWdnZ24ljxN78aBpCwmUtzmFgG38dGDobJ
 
