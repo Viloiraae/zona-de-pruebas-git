@@ -13,11 +13,11 @@ do
 done
 #comprobamos si el producto existe en la base de datos
 EXISTING_PRODUCT=$($PSQL "SELECT name FROM products WHERE name ILIKE '$PRODUCT_NAME';")
-if [[ -z $EXISTING_PRODUCT ]]
+if [[ -z "$EXISTING_PRODUCT" ]]
     then
     #comprobamos si hay un producto similar en la base de datos
     EXISTING_PRODUCT=$($PSQL "SELECT name FROM products WHERE name ILIKE '%$PRODUCT_NAME%';")
-    if [[ -n $EXISTING_PRODUCT ]]
+    if [[ -n "$EXISTING_PRODUCT" ]]
         then
         #Si aparecen uno o mas productos similares
         COUNT=$(echo "$EXISTING_PRODUCT" | wc -l)
@@ -35,7 +35,7 @@ if [[ -z $EXISTING_PRODUCT ]]
                 fi
             else
             echo -e "\nSe han encontrado varios productos similares a '$PRODUCT_NAME':"
-            echo "$EXISTING_PRODUCT" | nl
+            echo "$EXISTING_PRODUCT"
             echo -e "\nElija una opcion y vuelva al proceso de venta"
             exit 1
         fi 
