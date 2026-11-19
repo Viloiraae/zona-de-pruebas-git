@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict Wo2MK7TphQVykWhNDV6fww8GeDCUPy8rVmtqILAISASnvDU98kGa4dv0hKYCotg
+\restrict PwYf4VLJ4lyCaeX7EJqT5Sji4BWT4SBcFvwfROllgjl6YEOg5qyc1B6Xmghektn
 
 -- Dumped from database version 16.15
 -- Dumped by pg_dump version 16.15
@@ -28,9 +28,9 @@ CREATE DATABASE my_database WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_P
 
 ALTER DATABASE my_database OWNER TO postgres;
 
-\unrestrict Wo2MK7TphQVykWhNDV6fww8GeDCUPy8rVmtqILAISASnvDU98kGa4dv0hKYCotg
+\unrestrict PwYf4VLJ4lyCaeX7EJqT5Sji4BWT4SBcFvwfROllgjl6YEOg5qyc1B6Xmghektn
 \connect my_database
-\restrict Wo2MK7TphQVykWhNDV6fww8GeDCUPy8rVmtqILAISASnvDU98kGa4dv0hKYCotg
+\restrict PwYf4VLJ4lyCaeX7EJqT5Sji4BWT4SBcFvwfROllgjl6YEOg5qyc1B6Xmghektn
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -151,13 +151,11 @@ INSERT INTO public.categories VALUES (9, 'Iluminacion');
 -- Data for Name: products; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.products VALUES (5, 'Alfombrilla XL', 14.95, 40, 4);
 INSERT INTO public.products VALUES (6, 'Webcam Full HD 1080p', 42.00, 18, 5);
 INSERT INTO public.products VALUES (7, 'Microfono Condensador USB', 65.50, 10, 3);
 INSERT INTO public.products VALUES (8, 'Hub USB-C 7 en 1', 29.99, 22, 6);
 INSERT INTO public.products VALUES (9, 'Disco SSD Externo 1TB', 89.00, 12, 7);
 INSERT INTO public.products VALUES (10, 'Memoria USB 128GB', 16.50, 50, 7);
-INSERT INTO public.products VALUES (11, 'Soporte Elevador Monitor', 24.90, 19, 4);
 INSERT INTO public.products VALUES (12, 'Altavoces Estereo PC', 32.00, 16, 3);
 INSERT INTO public.products VALUES (13, 'Cable HDMI 2.1 2m', 11.99, 60, 8);
 INSERT INTO public.products VALUES (14, 'Adaptador Bluetooth 5.3', 9.95, 35, 6);
@@ -171,6 +169,8 @@ INSERT INTO public.products VALUES (20, 'Lampara Barra LED Monitor', 31.99, 16, 
 INSERT INTO public.products VALUES (4, 'Auriculares Inalambricos', 75.00, 30, 3);
 INSERT INTO public.products VALUES (1, 'Teclado Mecanico RGB', 59.99, 13, 1);
 INSERT INTO public.products VALUES (2, 'Raton Gaming Optico', 34.50, 24, 1);
+INSERT INTO public.products VALUES (11, 'Soporte Elevador Monitor', 24.90, 18, 4);
+INSERT INTO public.products VALUES (5, 'Alfombrilla XL', 14.95, 41, 4);
 
 
 --
@@ -223,5 +223,5 @@ ALTER TABLE ONLY public.products
 -- PostgreSQL database dump complete
 --
 
-\unrestrict Wo2MK7TphQVykWhNDV6fww8GeDCUPy8rVmtqILAISASnvDU98kGa4dv0hKYCotg
+\unrestrict PwYf4VLJ4lyCaeX7EJqT5Sji4BWT4SBcFvwfROllgjl6YEOg5qyc1B6Xmghektn
 
