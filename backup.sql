@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict nFrdEA19QkviZS7X54w974x3sXkXqRMJvCRBZLDV3WeH70bnzhk8GfqXuV5K9nm
+\restrict Wo2MK7TphQVykWhNDV6fww8GeDCUPy8rVmtqILAISASnvDU98kGa4dv0hKYCotg
 
 -- Dumped from database version 16.15
 -- Dumped by pg_dump version 16.15
@@ -28,9 +28,9 @@ CREATE DATABASE my_database WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_P
 
 ALTER DATABASE my_database OWNER TO postgres;
 
-\unrestrict nFrdEA19QkviZS7X54w974x3sXkXqRMJvCRBZLDV3WeH70bnzhk8GfqXuV5K9nm
+\unrestrict Wo2MK7TphQVykWhNDV6fww8GeDCUPy8rVmtqILAISASnvDU98kGa4dv0hKYCotg
 \connect my_database
-\restrict nFrdEA19QkviZS7X54w974x3sXkXqRMJvCRBZLDV3WeH70bnzhk8GfqXuV5K9nm
+\restrict Wo2MK7TphQVykWhNDV6fww8GeDCUPy8rVmtqILAISASnvDU98kGa4dv0hKYCotg
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -151,7 +151,6 @@ INSERT INTO public.categories VALUES (9, 'Iluminacion');
 -- Data for Name: products; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.products VALUES (2, 'Raton Gaming Optico', 34.50, 25, 1);
 INSERT INTO public.products VALUES (5, 'Alfombrilla XL', 14.95, 40, 4);
 INSERT INTO public.products VALUES (6, 'Webcam Full HD 1080p', 42.00, 18, 5);
 INSERT INTO public.products VALUES (7, 'Microfono Condensador USB', 65.50, 10, 3);
@@ -170,7 +169,8 @@ INSERT INTO public.products VALUES (16, 'Monitor Curvo 32 pulgadas', 279.00, 15,
 INSERT INTO public.products VALUES (3, 'Monitor 27 pulgadas IPS', 189.00, 20, 2);
 INSERT INTO public.products VALUES (20, 'Lampara Barra LED Monitor', 31.99, 16, 9);
 INSERT INTO public.products VALUES (4, 'Auriculares Inalambricos', 75.00, 30, 3);
-INSERT INTO public.products VALUES (1, 'Teclado Mecanico RGB', 59.99, 15, 1);
+INSERT INTO public.products VALUES (1, 'Teclado Mecanico RGB', 59.99, 13, 1);
+INSERT INTO public.products VALUES (2, 'Raton Gaming Optico', 34.50, 24, 1);
 
 
 --
@@ -223,5 +223,5 @@ ALTER TABLE ONLY public.products
 -- PostgreSQL database dump complete
 --
 
-\unrestrict nFrdEA19QkviZS7X54w974x3sXkXqRMJvCRBZLDV3WeH70bnzhk8GfqXuV5K9nm
+\unrestrict Wo2MK7TphQVykWhNDV6fww8GeDCUPy8rVmtqILAISASnvDU98kGa4dv0hKYCotg
 
