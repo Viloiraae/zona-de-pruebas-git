@@ -1,0 +1,16 @@
+# SISTEMA DE GESTION DE INVENTARIO
+Software diseñado para registrar y supervisar en tiempo real todos los productos y materias primas que entran, se almacenan o salen de una empresa. El flujo de trabajo se consigue con scripts de bash que interactuan entre ellos y con una base de datos PSQL que estructura las tablas en las que se guardan los datos de referencia. Se realizan las consultas necesarias para devolver resultados de: valoracion de inventario, stock por producto, por categoria, stock minimo para alarma de reposicion, gestion de actualizacion de stock tras reposicion, gestion de venta con actualizacion automatica de stock. Dispone ademas del archivo products.csv y un programa capaz de borrar y restaurar los datos de registro de la base a una imagen de dicho archivo.
+
+## ESTRUCTURA DE PROYECTO
+- `products.csv`: Archivo que guarda los datos de cada producto tabulados por comas. En un caso practico contendria la lista completa de inventario con nombre de producto, nombre de categoria, unidades de stock en el momento inicial y precio
+- `insert_data.sh`: Programa bash que interactua con PSQL en la base de datos dedicada. Borra las tablas de datos en caso que existan y crea unas nuevas tablas limpias en las que inserta los datos del archivo .csv, cogiendo cada fila como un registro y cada dato tabulado de la fila como el elemento de un campo de la tabla.
+- `queries.sh`: Programa bash que interactua con PSQL en la base de datos dedicada. Reporta a la pantalla terminal bash un resumen clave de almacen, que contiene los datos: Total de productos en catalogo, valor total de inventario, stock por categoria, alarma de reposicion para productos con bajo stock
+- `restock.sh`: Programa bash que interactua con PSQL en la base de datos dedicada. Utilidad para actualizar la base de datos con el nuevo stock tras un trabajo de reposicion de productos. Devuelve el valor de actualizacion de stock con un mensaje en la terminal bash.
+- `sell.sh`: Programa bash que interactua con PSQL en la base de datos dedicada. Utilidad para registrar una venta y actualizar la base de datos con el valor correspondiente. Comprueba si existe el producto, si hay stock disponible para atender a la demanda, descuenta la cantidad vendida del stock de almacen y devuelve a la terminal bash un mensaje con la confirmacion de la venta y con el stock actualizado.
+- `menu.sh`: Script de menú para la interacción con funciones de consulta, reabastecimiento y ventas. Muestra un menú con las opciones mencionadas, y ejecuta el script correspondiente según la opción seleccionada. El script que se ejecuta corre en un flujo normal hasta su conclusión, momento en que menu.sh vuelve a mostrar el menú de interacción para que el usuario decida si procede continuar con el trabajo o salir del programa.
+
+## Requisitos
+Para la correcta ejecucion de la aplicacion se necesita PostgreSQL, Bash (o Git Bash en Windows) y permisos de ejecución en los scripts (`chmod +x *.sh`).
+
+## Uso
+Para un funcionamiento correcto es necesario cargar los datos precisos en la base de datos, por ejemplo elaborando el archivo `products.csv` y luego ejecutando en la terminal bash el script `insert_data.sh`. Una vez que la base de datos esta documentada podemos hacer uso de todas las funciones de la aplicacion desde el menu que muestra el script `menu.sh` al ejecutarlo en la terminal bash.
