@@ -1,5 +1,5 @@
 #!/bin/bash
-# Sell script
+# Script para vender productos desde la base de datos
 #Configuración de conexión silenciosa (sin encabezados ni bordes de tabla)
 PSQL="psql -X --username=postgres --dbname=my_database --no-align --tuples-only -c"
 #Selección y validación del producto de venta

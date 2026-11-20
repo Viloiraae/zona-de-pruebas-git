@@ -1,4 +1,5 @@
 #!/bin/bash
+#script para reabastecer productos desde la base de datos
 #Configuración de conexión silenciosa (sin encabezados ni bordes de tabla)
 PSQL="psql -X --username=postgres --dbname=my_database --no-align --tuples-only -c"
 #capturamos el nombre del producto
