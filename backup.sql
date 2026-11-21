@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict PwYf4VLJ4lyCaeX7EJqT5Sji4BWT4SBcFvwfROllgjl6YEOg5qyc1B6Xmghektn
+\restrict jw1n6z5hcU7YN5AyIdpASeUhKspO11yExeR9kdGAEzlWLF46hh1FQFtUtrxRBQH
 
 -- Dumped from database version 16.15
 -- Dumped by pg_dump version 16.15
@@ -28,9 +28,9 @@ CREATE DATABASE my_database WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_P
 
 ALTER DATABASE my_database OWNER TO postgres;
 
-\unrestrict PwYf4VLJ4lyCaeX7EJqT5Sji4BWT4SBcFvwfROllgjl6YEOg5qyc1B6Xmghektn
+\unrestrict jw1n6z5hcU7YN5AyIdpASeUhKspO11yExeR9kdGAEzlWLF46hh1FQFtUtrxRBQH
 \connect my_database
-\restrict PwYf4VLJ4lyCaeX7EJqT5Sji4BWT4SBcFvwfROllgjl6YEOg5qyc1B6Xmghektn
+\restrict jw1n6z5hcU7YN5AyIdpASeUhKspO11yExeR9kdGAEzlWLF46hh1FQFtUtrxRBQH
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -161,16 +161,16 @@ INSERT INTO public.products VALUES (13, 'Cable HDMI 2.1 2m', 11.99, 60, 8);
 INSERT INTO public.products VALUES (14, 'Adaptador Bluetooth 5.3', 9.95, 35, 6);
 INSERT INTO public.products VALUES (15, 'Base Refrigeradora Portatil', 27.50, 14, 4);
 INSERT INTO public.products VALUES (17, 'Teclado Inalambrico Compacto', 38.00, 20, 1);
-INSERT INTO public.products VALUES (18, 'Raton Ergonomico Vertical', 29.50, 17, 1);
 INSERT INTO public.products VALUES (19, 'Tarjeta Memoria MicroSD 256GB', 24.00, 30, 7);
-INSERT INTO public.products VALUES (16, 'Monitor Curvo 32 pulgadas', 279.00, 15, 2);
 INSERT INTO public.products VALUES (3, 'Monitor 27 pulgadas IPS', 189.00, 20, 2);
-INSERT INTO public.products VALUES (20, 'Lampara Barra LED Monitor', 31.99, 16, 9);
 INSERT INTO public.products VALUES (4, 'Auriculares Inalambricos', 75.00, 30, 3);
 INSERT INTO public.products VALUES (1, 'Teclado Mecanico RGB', 59.99, 13, 1);
-INSERT INTO public.products VALUES (2, 'Raton Gaming Optico', 34.50, 24, 1);
-INSERT INTO public.products VALUES (11, 'Soporte Elevador Monitor', 24.90, 18, 4);
 INSERT INTO public.products VALUES (5, 'Alfombrilla XL', 14.95, 41, 4);
+INSERT INTO public.products VALUES (16, 'Monitor Curvo 32 pulgadas', 279.00, 14, 2);
+INSERT INTO public.products VALUES (2, 'Raton Gaming Optico', 34.50, 26, 1);
+INSERT INTO public.products VALUES (18, 'Raton Ergonomico Vertical', 29.50, 17, 1);
+INSERT INTO public.products VALUES (11, 'Soporte Elevador Monitor', 24.90, 15, 4);
+INSERT INTO public.products VALUES (20, 'Lampara Barra LED Monitor', 31.99, 17, 9);
 
 
 --
@@ -223,5 +223,5 @@ ALTER TABLE ONLY public.products
 -- PostgreSQL database dump complete
 --
 
-\unrestrict PwYf4VLJ4lyCaeX7EJqT5Sji4BWT4SBcFvwfROllgjl6YEOg5qyc1B6Xmghektn
+\unrestrict jw1n6z5hcU7YN5AyIdpASeUhKspO11yExeR9kdGAEzlWLF46hh1FQFtUtrxRBQH
 
