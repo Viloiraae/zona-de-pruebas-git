@@ -15,11 +15,11 @@ do
         ;;
         2)
         ./restock.sh
-        sleep 5
+        sleep 2.5
         ;;
         3)
         ./sell.sh
-        sleep 5
+        sleep 2.5
         ;;
         4)
         echo -e "\nSaliendo del programa..."
